@@ -1,0 +1,7 @@
+{
+  "name": "Red Cross Humanitarian Hub",
+  "description": "A modern, professional humanitarian organization website inspired by the Indian Red Cross Society Jamshedpur, featuring service management, blood bank resources, and an AI humanitarian assistant.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

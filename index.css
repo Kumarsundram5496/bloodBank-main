@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.red-cross-gradient {
+  background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+}
