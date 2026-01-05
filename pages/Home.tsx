@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Droplets, HeartPulse, Activity, Calendar } from 'lucide-react';
 import { SERVICES, STATS } from '../constants';
-import ChaibasaHospital from '../pages/images/ChaibasaHospital.png';
+import ChaibasaHospital from '../pages/Images/ChaibasaHospital.png';
 
 const Home: React.FC = () => {
   return (
