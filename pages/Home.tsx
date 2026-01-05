@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Droplets, HeartPulse, Activity, Calendar } from 'lucide-react';
 import { SERVICES, STATS } from '../constants';
+import ChaibasaHospital from '../pages/images/ChaibasaHospital.png';
 
 const Home: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const Home: React.FC = () => {
       <section className="relative h-[600px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://picsum.photos/id/1067/1920/1080"
+            src={ChaibasaHospital}
             alt="Hero Background"
             className="w-full h-full object-cover brightness-50"
           />
@@ -25,14 +26,14 @@ const Home: React.FC = () => {
             <p className="text-lg md:text-xl mb-8 opacity-90 leading-relaxed">
               We provide essential humanitarian assistance to the residents of chaibasa and surrounding regions through blood banking, disaster relief, and specialized healthcare services.
             </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            {/* <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <Link to="/donate" className="bg-red-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-all text-center">
                 Start Donating
               </Link>
               <Link to="/volunteer" className="bg-white text-slate-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-100 transition-all text-center">
                 Join as Volunteer
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -11,7 +11,7 @@ import AIChatbot from './components/AIChatbot';
 const ServicesPlaceholder = () => (
   <div className="py-24 container mx-auto px-4 text-center">
     <h1 className="text-4xl font-bold mb-6">Our Services</h1>
-    <p className="text-slate-600 max-w-xl mx-auto">Explore our range of humanitarian services including healthcare, vocational training, and disaster management. (Coming soon in full detail)</p>
+    <p className="text-slate-600 max-w-xl mx-auto">Site is under construction</p>
   </div>
 );
 
@@ -21,9 +21,9 @@ const ContactPlaceholder = () => (
     <div className="max-w-xl mx-auto space-y-4">
       <p className="text-slate-600">Reach out to us for any inquiries or support.</p>
       <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 text-left">
-        <p className="mb-2"><strong>Address:</strong> Red Cross Bhavan, Sakchi, Jamshedpur</p>
-        <p className="mb-2"><strong>Phone:</strong> +91 657 242 3422</p>
-        <p className="mb-2"><strong>Email:</strong> info@redcrossjamshedpur.org</p>
+        <p className="mb-2"><strong>Address:</strong> Red Cross Bhavan, Sadar Bazar, Chaibasa</p>
+        <p className="mb-2"><strong>Phone:</strong> +91 0000000000</p>
+        <p className="mb-2"><strong>Email:</strong> info@redcrosswestsinghbhum.org</p>
       </div>
     </div>
   </div>

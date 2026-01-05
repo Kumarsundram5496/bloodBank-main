@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Target, Users, Shield, Award, HeartPulse } from 'lucide-react';
+import BloodBank from '../pages/Images/BloodBank.png';
 
 const About: React.FC = () => {
   return (
@@ -8,9 +9,9 @@ const About: React.FC = () => {
       {/* Banner */}
       <section className="bg-slate-900 py-24 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-6">About Our Branch</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6">Red Cross west Singhbhum</h1>
           <p className="text-xl opacity-80 max-w-2xl mx-auto">
-            Serving the people of East Singhbhum since 1950, the Jamshedpur District Branch is a beacon of hope and humanitarian service.
+            Serving the people of west Singhbhum since 1950
           </p>
         </div>
       </section>
@@ -19,20 +20,20 @@ const About: React.FC = () => {
       <section className="py-24">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">
-            <img src="https://picsum.photos/id/1018/1000/1000" alt="Old Red Cross Bhavan" className="rounded-3xl shadow-2xl" />
+            <img src={BloodBank} alt="Old Red Cross Bhavan" className="rounded-3xl shadow-2xl" />
           </div>
           <div className="lg:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-red-600 uppercase tracking-widest text-sm">Our Legacy</h2>
             <h3 className="text-4xl font-bold mb-8 text-slate-900">A Heritage of Humanitarianism</h3>
             <div className="space-y-6 text-slate-600 leading-relaxed">
               <p>
-                The Indian Red Cross Society, East Singhbhum District Branch, started its journey decades ago with a small team of dedicated doctors and volunteers. Over the years, we have grown into one of the most active district branches in India.
+                The Indian Red Cross Society, West Singhbhum District Branch, started its journey decades ago with a small team of dedicated doctors and volunteers. Over the years, we have grown into one of the most active district branches in India.
               </p>
               <p>
                 Our core activities revolve around the Fundamental Principles of the International Red Cross: Humanity, Impartiality, Neutrality, Independence, Voluntary Service, Unity, and Universality.
               </p>
               <p>
-                From responding to major national disasters to providing the daily requirement of blood for thalassemia patients in Jamshedpur, our organization stands at the forefront of social service.
+                From responding to major national disasters to providing the daily requirement of blood for thalassemia patients in West Singhbhum, our organization stands at the forefront of social service.
               </p>
             </div>
           </div>
@@ -57,7 +58,7 @@ const About: React.FC = () => {
             </div>
             <h4 className="text-2xl font-bold mb-6 text-slate-900">Our Vision</h4>
             <p className="text-slate-600 leading-relaxed">
-              To be the leading humanitarian organization in Jharkhand, improving the lives of vulnerable people by mobilizing the power of humanity and the spirit of selfless service.
+              To be the leading humanitarian organization in West Singhbhum, Jharkhand, improving the lives of vulnerable people by mobilizing the power of humanity and the spirit of selfless service.
             </p>
           </div>
         </div>

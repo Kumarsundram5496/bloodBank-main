@@ -66,8 +66,8 @@ export const SERVICES = [
 ];
 
 export const STATS = [
-  { label: 'Lives Impacted', value: '250k+', icon: <Users className="w-6 h-6" /> },
-  { label: 'Blood Units Collected', value: '15k+', icon: <Droplet className="w-6 h-6" /> },
-  { label: 'Volunteers', value: '5k+', icon: <HandHelping className="w-6 h-6" /> },
+  { label: 'Lives Impacted', value: '0k+', icon: <Users className="w-6 h-6" /> },
+  { label: 'Blood Units Collected', value: '0k+', icon: <Droplet className="w-6 h-6" /> },
+  { label: 'Volunteers', value: '0k+', icon: <HandHelping className="w-6 h-6" /> },
   { label: 'Years of Service', value: '50+', icon: <ShieldAlert className="w-6 h-6" /> },
 ];

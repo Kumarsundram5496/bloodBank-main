@@ -31,7 +31,7 @@ const Header: React.FC = () => {
           </div>
           <div>
             <span className="text-xl font-bold text-red-600 block leading-none">RED CROSS</span>
-            <span className="text-[10px] tracking-widest text-slate-500 uppercase">Chaibasa Branch</span>
+            <span className="text-[10px] tracking-widest text-slate-500 uppercase">West Singhbhum</span>
           </div>
         </Link>
 
@@ -118,10 +118,10 @@ const Footer: React.FC = () => {
           <h3 className="text-white text-xl font-bold mb-6">Our Services</h3>
           <ul className="space-y-3 text-sm">
             <li><Link to="/services" className="hover:text-red-500 transition-colors">Blood Banking</Link></li>
-            <li><Link to="/services" className="hover:text-red-500 transition-colors">Disaster Management</Link></li>
+            {/* <li><Link to="/services" className="hover:text-red-500 transition-colors">Disaster Management</Link></li> */}
             <li><Link to="/services" className="hover:text-red-500 transition-colors">Emergency Ambulance</Link></li>
-            <li><Link to="/services" className="hover:text-red-500 transition-colors">Physiotherapy</Link></li>
-            <li><Link to="/services" className="hover:text-red-500 transition-colors">Vocational Training</Link></li>
+            {/* <li><Link to="/services" className="hover:text-red-500 transition-colors">Physiotherapy</Link></li>
+            <li><Link to="/services" className="hover:text-red-500 transition-colors">Vocational Training</Link></li> */}
           </ul>
         </div>
         <div>
@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
           <ul className="space-y-4 text-sm">
             <li className="flex items-start">
               <MapPin className="w-5 h-5 mr-3 text-red-500 shrink-0" />
-              <span>Red Cross Bhavan, Sakchi, Jamshedpur - 831001, Jharkhand, India</span>
+              <span>Red Cross Bhavan, Sadar Bazar, Chaibasa - 833201, Jharkhand, India</span>
             </li>
             <li className="flex items-center">
               <Phone className="w-5 h-5 mr-3 text-red-500 shrink-0" />
@@ -137,13 +137,13 @@ const Footer: React.FC = () => {
             </li>
             <li className="flex items-center">
               <Mail className="w-5 h-5 mr-3 text-red-500 shrink-0" />
-              <span>support@redcrossjamshedpur.org</span>
+              <span>support@redcrosswestsinghbhum.org</span>
             </li>
           </ul>
         </div>
       </div>
       <div className="container mx-auto px-4 mt-16 pt-8 border-t border-slate-800 text-center text-xs">
-        <p>&copy; {new Date().getFullYear()} Indian Red Cross Society, East Singhbhum District Branch. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Indian Red Cross Society, West Singhbhum District Branch. All rights reserved.</p>
       </div>
     </footer>
   );

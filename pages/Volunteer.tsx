@@ -9,7 +9,7 @@ const Volunteer: React.FC = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6">Become a Volunteer</h1>
           <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            Join thousands of volunteers in Jamshedpur who give their time to help humanity. No special skills needed—just a willing heart.
+            Join thousands of volunteers in West Singhbhum who give their time to help humanity. No special skills needed—just a willing heart.
           </p>
         </div>
       </section>
@@ -25,7 +25,7 @@ const Volunteer: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-2 text-slate-900">Give Back to Your Community</h4>
-                  <p className="text-slate-600 text-sm">Impact the lives of your fellow residents in Jamshedpur directly through our local programs.</p>
+                  <p className="text-slate-600 text-sm">Impact the lives of your fellow residents in West Singhbhum directly through our local programs.</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -64,16 +64,16 @@ const Volunteer: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium mb-1">First Name</label>
-                  <input type="text" required className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="John" />
+                  <input type="text" required className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Kumar" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">Last Name</label>
-                  <input type="text" required className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Doe" />
+                  <input type="text" required className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Sundram" />
                 </div>
               </div>
               <div>
                 <label className="block text-sm font-medium mb-1">Email Address</label>
-                <input type="email" required className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="john@example.com" />
+                <input type="email" required className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="KumarSundram5496@gmail.com" />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-1">Mobile Number</label>
@@ -82,7 +82,7 @@ const Volunteer: React.FC = () => {
               <div>
                 <label className="block text-sm font-medium mb-2">Areas of Interest</label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {['Blood Donation Camp', 'Disaster Relief', 'Administrative Help', 'Youth Red Cross', 'Teaching/Vocational', 'Medical Assistance'].map(area => (
+                  {['Blood Donation Camp', 'Administrative Help', 'Youth Red Cross',  'Medical Assistance'].map(area => (
                     <label key={area} className="flex items-center space-x-2 text-sm text-slate-600 cursor-pointer">
                       <input type="checkbox" className="w-4 h-4 rounded text-red-600 focus:ring-red-500" />
                       <span>{area}</span>
