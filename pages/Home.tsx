@@ -3,7 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Droplets, HeartPulse, Activity, Calendar } from 'lucide-react';
 import { SERVICES, STATS } from '../constants';
-import ChaibasaHospital from '../pages/Images/ChaibasaHospital.png';
+import ChaibasaHospital from '/pages/Images/ChaibasaHospital.png';
+import ONE from '/pages/Images/Ser.png';
 
 const Home: React.FC = () => {
   return (
@@ -61,7 +62,7 @@ const Home: React.FC = () => {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-red-600 font-bold uppercase tracking-widest text-sm mb-4">Our Services</h2>
             <h3 className="text-4xl font-bold text-slate-900 mb-6">Humanitarian Services at a Glance</h3>
-            <p className="text-slate-600">The Jamshedpur branch of the Red Cross operates several critical departments aimed at helping those in need, regardless of background or status.</p>
+            <p className="text-slate-600">The West Singhbhum branch of the Red Cross operates several critical departments aimed at helping those in need, regardless of background or status.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -95,17 +96,17 @@ const Home: React.FC = () => {
           <div className="max-w-xl mb-12 lg:mb-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 italic">"A single pint of blood can save three lives."</h2>
             <p className="text-lg opacity-90 mb-8">
-              Our Blood Bank in Jamshedpur is constantly in need of donors. Whether you are O+ or a rare AB-, your contribution matters more than you know.
+              Our Blood Bank in Chaibasa is constantly in need of donors. Whether you are O+ or a rare AB-, your contribution matters more than you know.
             </p>
             <div className="flex flex-wrap gap-4">
-              <div className="bg-white/10 px-6 py-3 rounded-xl border border-white/20">
+              {/* <div className="bg-white/10 px-6 py-3 rounded-xl border border-white/20">
                 <div className="text-2xl font-bold">O+ Needed</div>
                 <div className="text-xs opacity-70">Urgent Requirement</div>
-              </div>
-              <div className="bg-white/10 px-6 py-3 rounded-xl border border-white/20">
+              </div> */}
+              {/* <div className="bg-white/10 px-6 py-3 rounded-xl border border-white/20">
                 <div className="text-2xl font-bold">B- Rare</div>
                 <div className="text-xs opacity-70">Contact for Details</div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="bg-white p-10 rounded-3xl text-slate-900 shadow-2xl w-full max-w-md">
@@ -115,7 +116,7 @@ const Home: React.FC = () => {
             <form className="space-y-4" onSubmit={e => e.preventDefault()}>
               <div>
                 <label className="block text-sm font-medium mb-1">Full Name</label>
-                <input type="text" className="w-full px-4 py-2 bg-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="John Doe" />
+                <input type="text" className="w-full px-4 py-2 bg-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Kumar" />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-1">Blood Group</label>
@@ -155,20 +156,20 @@ const Home: React.FC = () => {
               {
                 title: 'Massive Blood Donation Camp Organized',
                 date: 'Oct 12, 2023',
-                img: 'https://picsum.photos/id/1/800/600',
+                img: ONE,
                 excerpt: 'Over 500 units of blood collected in a single day at Sakchi Center.'
               },
               {
-                title: 'New Physiotherapy Unit Inaugurated',
+                title: 'News will be displyed here',
                 date: 'Sep 25, 2023',
                 img: 'https://picsum.photos/id/3/800/600',
-                excerpt: 'State-of-the-art equipment added to serve post-operative patients.'
+                excerpt: 'NA'
               },
               {
-                title: 'Disaster Preparedness Workshop',
+                title: 'News will be displyed here',
                 date: 'Aug 10, 2023',
                 img: 'https://picsum.photos/id/5/800/600',
-                excerpt: 'Volunteers trained for flood rescue and first aid response.'
+                excerpt: 'Na'
               }
             ].map((news, i) => (
               <div key={i} className="flex flex-col group">
