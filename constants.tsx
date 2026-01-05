@@ -11,9 +11,9 @@ import {
   HandHelping 
 } from 'lucide-react';
 
-import Blood1 from '/Pages/Images/Blood1.png';
-import SadarHospital from '/Pages/Images/ChaibasaHospital.png';
-import Car from '/Pages/Images/CarRedCross.png';
+import Blood1 from './Pages/Images/Blood1.png';
+import SadarHospital from './Pages/Images/ChaibasaHospital.png';
+import Car from './Pages/Images/CarRedCross.png';
 
 export const NAV_ITEMS = [
   { label: 'Home', href: '/' },
