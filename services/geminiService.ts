@@ -1,35 +1,27 @@
+// Use the official @google/generative-ai library (standard for Gemini)
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
-import { GoogleGenAI } from "@google/genai";
+// Access the key using the Vite-specific syntax
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
-// Initialize GoogleGenAI strictly using the environment variable directy as required by guidelines.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// Initialize the AI
+const genAI = new GoogleGenerativeAI(API_KEY || "");
 
-const SYSTEM_INSTRUCTION = `
-You are a helpful and compassionate AI assistant for the Indian Red Cross Society (Humanitarian Hub). 
-Your goal is to provide information about:
-1. Blood donation requirements and benefits.
-2. How to find the nearest blood bank or service center.
-3. Volunteering opportunities and registration.
-4. Red Cross services like physiotherapy, clinics, and vocational training.
-5. First aid basics (always with a disclaimer to seek professional medical help).
-
-Keep your tone professional, empathetic, and informative. If you don't know an answer, direct users to call the local branch at +91-123-4567890.
-`;
+const SYSTEM_INSTRUCTION = `... (your instruction) ...`;
 
 export const getGeminiResponse = async (userMessage: string) => {
   try {
-    const response = await ai.models.generateContent({
-      model: "gemini-3-flash-preview",
-      contents: userMessage,
-      config: {
-        systemInstruction: SYSTEM_INSTRUCTION,
-        temperature: 0.7,
-      },
+    // Note: Use 'gemini-1.5-flash' for the best balance of speed/cost
+    const model = genAI.getGenerativeModel({ 
+      model: "gemini-1.5-flash",
+      systemInstruction: SYSTEM_INSTRUCTION 
     });
 
-    return response.text || "I'm sorry, I couldn't process that request right now.";
+    const result = await model.generateContent(userMessage);
+    const response = await result.response;
+    return response.text();
   } catch (error) {
     console.error("Gemini API Error:", error);
-    return "The assistant is currently offline. Please contact us directly for urgent inquiries.";
+    return "The assistant is currently offline. Please contact us directly.";
   }
 };
