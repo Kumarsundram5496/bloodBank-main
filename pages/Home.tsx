@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Droplets, HeartPulse, Activity, Calendar } from 'lucide-react';
+import { ArrowRight, Droplets, HeartPulse, Activity, Calendar, ShieldCheck, UserCheck, Stethoscope, Zap } from 'lucide-react';
 import { SERVICES, STATS } from '../constants';
 import ChaibasaHospital from '/pages/Images/ChaibasaHospital.png';
 import ONE from '/pages/Images/Ser.png';
@@ -25,16 +24,8 @@ const Home: React.FC = () => {
               <span className="text-red-500">Service for Humanity</span>
             </h1>
             <p className="text-lg md:text-xl mb-8 opacity-90 leading-relaxed">
-              We provide essential humanitarian assistance to the residents of chaibasa and surrounding regions through blood banking, disaster relief, and specialized healthcare services.
+              We provide essential humanitarian assistance to the residents of West Singhbhum and surrounding regions through blood banking, disaster relief, and specialized healthcare services.
             </p>
-            {/* <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link to="/donate" className="bg-red-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-all text-center">
-                Start Donating
-              </Link>
-              <Link to="/volunteer" className="bg-white text-slate-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-100 transition-all text-center">
-                Join as Volunteer
-              </Link>
-            </div> */}
           </div>
         </div>
       </section>
@@ -87,6 +78,63 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* NEW: Benefits & Eligibility Section */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
+            {/* Benefits Column */}
+            <div>
+              <h2 className="text-red-600 font-bold uppercase tracking-widest text-sm mb-4">Why Donate?</h2>
+              <h3 className="text-4xl font-bold text-slate-900 mb-8">Benefits of Blood Donation</h3>
+              <div className="space-y-6">
+                {[
+                  { icon: <HeartPulse />, title: "Improves Heart Health", desc: "Regular donation helps reduce iron overload, lowering the risk of heart attacks." },
+                  { icon: <Stethoscope />, title: "Free Health Check-up", desc: "Get a mini-physical, including BP, pulse, and hemoglobin testing at every visit." },
+                  { icon: <Zap />, title: "New Blood Cell Production", desc: "Donating stimulates your body to produce fresh, healthy red blood cells." },
+                  { icon: <ShieldCheck />, title: "Save Multiple Lives", desc: "A single donation can be split into components to save up to 3 lives." }
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <div className="p-3 bg-red-50 text-red-600 rounded-xl">{item.icon}</div>
+                    <div>
+                      <h4 className="font-bold text-slate-900">{item.title}</h4>
+                      <p className="text-slate-600 text-sm">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Eligibility Column */}
+            <div className="bg-slate-900 text-white p-10 rounded-3xl relative overflow-hidden">
+              <div className="relative z-10">
+                <h3 className="text-3xl font-bold mb-8">Can You Donate?</h3>
+                <ul className="space-y-6">
+                  {[
+                    "Weight: Must be at least 45 - 50 kg.",
+                    "Age: Typically between 18 and 65 years.",
+                    "Health: Must be in good general health at the time of donation.",
+                    "Last Donation: Minimum gap of 3 months since your last donation.",
+                    "Lifestyle: No major surgery or tattoos in the last 6-12 months."
+                  ].map((text, i) => (
+                    <li key={i} className="flex items-center gap-4">
+                      <UserCheck className="text-red-500 w-6 h-6 flex-shrink-0" />
+                      <span className="opacity-90">{text}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-10 p-6 bg-white/10 rounded-2xl border border-white/20">
+                  <p className="text-sm italic opacity-80 text-center">
+                    Note: Final eligibility is determined by the medical staff at the Chaibasa Blood Bank following a screening.
+                  </p>
+                </div>
+              </div>
+              <Droplets className="absolute -bottom-10 -right-10 w-64 h-64 text-red-600/20" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Urgent Blood Donation CTA */}
       <section className="py-20 bg-red-600 text-white overflow-hidden relative">
         <div className="absolute right-0 top-0 opacity-10 scale-150 rotate-12">
@@ -98,16 +146,6 @@ const Home: React.FC = () => {
             <p className="text-lg opacity-90 mb-8">
               Our Blood Bank in Chaibasa is constantly in need of donors. Whether you are O+ or a rare AB-, your contribution matters more than you know.
             </p>
-            <div className="flex flex-wrap gap-4">
-              {/* <div className="bg-white/10 px-6 py-3 rounded-xl border border-white/20">
-                <div className="text-2xl font-bold">O+ Needed</div>
-                <div className="text-xs opacity-70">Urgent Requirement</div>
-              </div> */}
-              {/* <div className="bg-white/10 px-6 py-3 rounded-xl border border-white/20">
-                <div className="text-2xl font-bold">B- Rare</div>
-                <div className="text-xs opacity-70">Contact for Details</div>
-              </div> */}
-            </div>
           </div>
           <div className="bg-white p-10 rounded-3xl text-slate-900 shadow-2xl w-full max-w-md">
             <h3 className="text-2xl font-bold mb-6 flex items-center">
