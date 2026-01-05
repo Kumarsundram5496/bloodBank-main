@@ -13,8 +13,8 @@ const Header: React.FC = () => {
       <div className="bg-red-600 text-white py-2 text-sm">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex space-x-4">
-            <span className="flex items-center"><Phone className="w-3 h-3 mr-1" /> +91 657 242 3422</span>
-            <span className="hidden sm:flex items-center"><Mail className="w-3 h-3 mr-1" /> info@redcrosschaibasa.org</span>
+            <span className="flex items-center"><Phone className="w-3 h-3 mr-1" /> +91 000 000 000</span>
+            <span className="hidden sm:flex items-center"><Mail className="w-3 h-3 mr-1" /> info@redcrosswestsinghbhum.org</span>
           </div>
           <div className="flex space-x-4">
             <Facebook className="w-4 h-4 cursor-pointer hover:text-red-200" />
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
             </li>
             <li className="flex items-center">
               <Phone className="w-5 h-5 mr-3 text-red-500 shrink-0" />
-              <span>+91 657 242 3422</span>
+              <span>+91 000 000 0000</span>
             </li>
             <li className="flex items-center">
               <Mail className="w-5 h-5 mr-3 text-red-500 shrink-0" />
